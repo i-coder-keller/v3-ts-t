@@ -8,7 +8,7 @@ module.exports = {
   "extends": [
     "eslint:recommended",
     "plugin:vue/vue3-essential",
-    "plugin:@typescript-eslint/recommended"
+    "plugin:@typescript-eslint/recommended",
   ],
   'parser': 'vue-eslint-parser',
   "parserOptions": {
@@ -35,6 +35,8 @@ module.exports = {
     'no-duplicate-imports': 'error',
     'no-var': 'error',
     'prefer-const': 'error',
-    'rest-spread-spacing': 'error'
+    'rest-spread-spacing': 'error',
+    '@typescript-eslint/no-var-requires': 0,
+    "vue/multi-word-component-names":"off",
   }
 }
